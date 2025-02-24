@@ -63,43 +63,40 @@ button {
 .header-banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   /* border: 5px solid rgb(0, 255, 94); */
 }
-.header-banner-content{
-  /* background-color: antiquewhite ; */
-  /* border: 5px solid rgb(255, 0, 221); */
-}
-.header-banner > div {
+.header-banner > div ,.header-banner-text {
   /* gap: 16px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 17px;
-}
-.header-banner-text {
-  gap: 1rem;
+  gap: 16px;
 }
 .header-banner-text h1 {
-  font-size: 3.25rem;
+  font-size: clamp(1.5rem, calc(2.64vw + 1rem), 3.25rem);
+  /* font-size: 2.6vw; */
+
+  /* font-size: 3.25rem; */
   font-weight: bold;
-  line-height: 4.2rem;
+  /* line-height: 3.4vw; */
 }
 .header-banner-text p {
-  font-size: 1.1rem;
+  font-size: clamp(0.8rem, calc(0.8vw+1rem), 1rem);
   font-weight: 500;
-  line-height: 1.5rem;
+  /* line-height: 1.5rem; */
 }
-.header-banner-images{
+.header-banner-images-container {
   /* border: 5px solid red; */
 }
-#Circle-design{
+#header-banner-images {
   /* border: 5px solid rgb(0, 255, 51); */
   display: flex;
   justify-content: right;
-  position:relative ;
+  position: relative;
 }
 #main-camera {
-  /* border:3px solid black; */
+  /* border: 6px solid rgb(81, 104, 255); */
   position: absolute;
   top: 20px;
   right: 20px;
@@ -135,28 +132,25 @@ button {
     display: flex;
     flex-direction: column-reverse;
   }
-  .header-banner-content{
+  .header-banner-content {
     align-items: center;
   }
-  .header-banner-text{
+  .header-banner-text {
     text-align: center;
   }
-  .header-banner-text h1{
-    font-size: 2.5rem;
-    line-height: 3rem;
-
+  #header-banner-images {
+    justify-content: center;
   }
-  #Circle-design{
-    /* display: none; */
-    
-
+  #Circle-design {
+    width: 100%;
+    padding: 36px;
   }
-  #main-camera{
-    display: none;
-    /* top: auto; */
-    /* height: auto;
-    weight:auto; */
-    /* left: 100px; */
+  #main-camera {
+    inset: 0;
+    display: grid;
+    place-items: center;
   }
-
+  #main-camera-img {
+    width: 75%;
+  }
 }
