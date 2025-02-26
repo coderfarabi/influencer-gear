@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.poppins-thin-font {
+.poppins-font {
   font-family: "Poppins", serif;
   font-style: normal;
 }
@@ -17,7 +17,9 @@ body {
 .font-color-1 {
   color: rgba(58, 58, 58, 1);
 }
-
+.border-color-1 {
+  color: rgba(192, 204, 218, 0.1);
+}
 /* nav style ---------------- */
 nav a {
   text-decoration: none;
@@ -27,7 +29,7 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 .nav-2 {
   display: none;
@@ -66,7 +68,8 @@ button {
   grid-template-rows: auto;
   /* border: 5px solid rgb(0, 255, 94); */
 }
-.header-banner > div ,.header-banner-text {
+.header-banner > div,
+.header-banner-text {
   /* gap: 16px; */
   display: flex;
   flex-direction: column;
@@ -101,6 +104,37 @@ button {
   top: 20px;
   right: 20px;
 }
+
+/* Payment methods style ----------- */
+
+.payment-methods {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  place-content: center;
+  align-items: center;
+  gap: 11px 60px;
+  padding: 25px 62px;
+  margin: 70px 50px 150px;
+  border-top: 2px solid rgba(192, 204, 218, 0.2);
+  border-bottom: 2px solid rgba(192, 204, 218, 0.2);
+  /* border: 2px solid rgb(25, 0, 255); */
+}
+.payment-methods a {
+  /* border: 1px solid rgb(0, 255, 0); */
+}
+
+/* popular collections container style ------------ */
+.collections-header > p {
+  font-size: 1.75rem;
+  font-weight: 500;
+  /* margin-bottom: 1.5rem; */
+}
+
+
+
 
 /* media query  --------------*/
 /* for mobile view */
@@ -153,4 +187,31 @@ button {
   #main-camera-img {
     width: 75%;
   }
+
+  /* payment methods style ------------ */
+  .payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fit, 10%); */
+    border: none;
+    gap: 11px 25px ;
+    padding: 50px 0 24px;
+    margin: 0;
+  }
+  .payment-methods img {
+    display: flex;
+    width: 13vw;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 }
