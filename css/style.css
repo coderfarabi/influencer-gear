@@ -139,7 +139,7 @@ button {
 /* popular collections container style ------------ */
 
 .collections-container{
-  /* justify-items: center */
+  position: relative;
 }
 .collections-header > p {
   /* font-size: 2vw; */
@@ -193,6 +193,18 @@ button {
 }
 /* media query  --------------*/
 /* for mobile view */
+#seemore-btn > a{
+  text-decoration: none;
+  color: rgba(224, 44, 109, 0.87);
+  /* margin: 100px; */
+  padding: 50px 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+}
+
+
 
 @media screen and (max-width: 576px) {
   * {
@@ -257,9 +269,7 @@ button {
     display: flex;
     width: 13vw;
   }
-  .collections-container
-
-
+  
   /* popular collections container style ------------ */
 
 
@@ -274,13 +284,4 @@ button {
 
   /* width: 50%; */
 }
-
-
-
-
-
-
-
-
-
 }
