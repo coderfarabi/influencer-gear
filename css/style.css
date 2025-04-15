@@ -5,23 +5,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-.poppins-font {
   font-family: "Poppins", serif;
   font-style: normal;
 }
-body {
-  margin: 5.31rem 7.5rem 0;
-
-}
-
 .central-section{
-  /* display: flex; */
-  /* justify-self: center;
-  max-width: 1500px; */
-  /* box-shadow: 0 0 15px  rgba(58, 58, 58, 0.1); */
-  /* background-color: rgba(58, 58, 58, 1); */
+  margin: 5.31rem 7.5rem 0;
 }
+
 /* color sector -----------------*/
 
 .font-color-1 {
@@ -56,7 +46,7 @@ nav a {
 }
 
 /* button style ------------ */
-button {
+.btn-primary {
   display: flex;
   align-items: center;
   padding: 10px 25px;
@@ -80,7 +70,6 @@ button {
 }
 .header-banner > div,
 .header-banner-text {
-  /* gap: 16px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,9 +120,6 @@ button {
   border-top: 2px solid rgba(192, 204, 218, 0.2);
   border-bottom: 2px solid rgba(192, 204, 218, 0.2);
   /* border: 2px solid rgb(25, 0, 255); */
-}
-.payment-methods a {
-  /* border: 1px solid rgb(0, 255, 0); */
 }
 
 /* popular collections container style ------------ */
@@ -197,15 +183,65 @@ button {
   text-decoration: none;
   color: rgba(224, 44, 109, 0.87);
   /* margin: 100px; */
-  padding: 50px 20px;
+  margin: 50px 20px;
   font-size: 1.2rem;
   font-weight: 600;
   position: absolute;
   right: 0;
 }
 
+/* -----featured------ */
+.featured {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  /* padding: 50px; */
+  margin: 150px 0px 100px;
+  align-items: center;
+}
+.featured-header {
+  display: contents;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: rgba(10, 8, 38, 1);
+}
+#featured-img{
+  border-radius:10px ;
+  max-width: 400px;
+}
+.featured-para {
+  color: rgba(108, 108, 108, 1);
+}
 
-
+/* footer section -------- */
+footer {
+  padding: 50px 0px;
+  background-color: rgb(4, 0, 46);
+  color: white;
+}
+.footer-card{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  /* border: 5px solid rgb(0, 255, 51); */
+}
+.footer-card p {
+  text-align: center;
+  font-size: smaller;
+}
+.footer-share {
+  display: contents;
+  display: flex;
+  gap: 1rem;
+}
+.footer-share i {
+  padding: 10px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, .16);
+  color: white;
+}
 @media screen and (max-width: 576px) {
   * {
     font-size: 14px;
